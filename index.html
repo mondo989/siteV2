@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="armandosApp" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Armandos App</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/lib/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script src="bower_components/angular/angular.min.js"></script>
+  <!-- <script src="js/lib/angular.min.js.map"></script>  I guess this is for debugging-->
+  </head>
+      <body>
+          <div ui-view></div>
+
+          <a ui-sref="state1">State 1</a>
+      <a ui-sref="state2">State 2</a>
+      </body>
+      <script src="js/lib/angular-ui-router.min.js"></script>
+      <script src="js/lib/angular-bootstrap.min.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/services.js"></script>
+      <script src="js/controllers.js"></script>
+
+  </html>
