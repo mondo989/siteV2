@@ -1,0 +1,35 @@
+.index {
+  background-color: blue;
+  height: 4000px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+
+
+.index {
+  background: red;
+}
+
+.index .separator {
+  height: 1px;
+  width: 90%;
+  margin: 0 auto;
+  background: #f0f0f0;
+
+}
+
+.hero {
+  background: white;
+  position: absolute;
+  top: 45vh;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.hero img {
+  border-radius: 120px;
+  margin-top: -80px;
+  border: 2px solid white;
+}

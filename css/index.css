@@ -1,1 +1,80 @@
 
+.main-nav {
+  background: rgba(0, 0, 0, 0.025);
+  height: 100%;
+  position: fixed;
+  left: 0;
+  width: 19%;
+}
+
+.main-nav ul {
+  display: block;
+  padding-top: 30vh;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: center;
+
+-webkit-animation: fadeInLeft 1s;
+  animation: fadeInLeft 1s;
+}
+
+.main-nav ul li a{
+  color: gray;
+  padding: 50px 0;
+  background: #f3f3f3;
+  display: block;
+  width: 100%;
+  padding-left: 0!important;
+  margin-left: 0!important;
+  list-style: none;
+  margin: 5px 0;
+}
+
+.main-nav ul li a:hover{
+  background: blue;
+}
+
+a.active {
+  background: black;
+}
+
+.view-holder {
+  width: 81%;
+  position: absolute;
+  right: 0;
+  background: yellow;
+  transition: 1s;
+}
+
+.transition-anim {
+-webkit-animation: fadeInRight 1s;
+  animation: fadeInRight 1s;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .view-holder {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top:0;
+  }
+
+  .main-nav {
+    -webkit-animation: fadeInUp 2s;
+    animation: fadeInUp 2s;
+    bottom:0;
+    right: 0;
+    left:0;
+    width: 100%;
+    height: 10vh;
+  }
+}

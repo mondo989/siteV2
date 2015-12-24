@@ -1,19 +1,23 @@
-var app = angular.module('armandosApp', ['ui.router', 'ui.bootstrap']);
-
-app.config(function($stateProvider, $urlRouteProvider){
-  $urlRouteProvider.otherwise("/index");
-
+var app = angular.module('armandosApp', ['ui.bootstrap','ui.router']);
+//
+app.config(function($stateProvider, $urlRouterProvider){
+  $urlRouterProvider
+    .otherwise("/index");
   $stateProvider
-    .state('index', {
+    .state("index", {
       url: "/index",
       templateUrl: "templates/index.html"
     })
-    .state('about', {
+    .state("about", {
       url: "/about",
       templateUrl: "templates/about.html"
     })
-    .state('portfolio', {
+    .state("portfolio", {
       url: "/portfolio",
       templateUrl: "templates/portfolio.html"
+    })
+    .state("contact", {
+      url: "/contact",
+      templateUrl: "templates/contact.html"
     })
 })
