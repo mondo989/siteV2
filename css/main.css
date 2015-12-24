@@ -1,6 +1,6 @@
 .index {
   background-color: blue;
-  height: 4000px;
+  height: 2000px;
   padding-top: 0;
   margin-top: 0;
 }
@@ -8,7 +8,7 @@
 
 
 .index {
-  background: red;
+  background: #f3f3f3;
 }
 
 .index .separator {
@@ -21,6 +21,9 @@
 
 .hero {
   background: white;
+  background: url('../img/sky.png');
+  background-repeat: no-repeat;
+  background-size: auto;
   position: absolute;
   top: 45vh;
   bottom: 0;
