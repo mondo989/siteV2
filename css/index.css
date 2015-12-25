@@ -76,6 +76,7 @@ body {
 .active {
   background: black;
   text-align: center;
+  transition: 3s;
 }
 
 

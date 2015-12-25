@@ -6,11 +6,16 @@ angular.module('armandosApp')
   // $scope.sticky = 'sticky';
     // This is for waypoints !!!
     // This fires the portfolio view on a long scroll.
+
+
+    //   document.getElementById("pfolio").className = "active";
+
+    $scope.leavingFold = function() {
+       document.getElementById("hero").className = "active";
+
+    }
+
   $scope.portfolio = function(){
-    document.getElementById("pfolio").className = "active";
-
-
-
     // $state.go("portfolio");
   }
   console.log('indexCtrl loaded');

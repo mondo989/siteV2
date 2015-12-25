@@ -27,7 +27,6 @@
 }
 
 .hero {
-  background: white;
   background: url('../img/sky.png');
   background-repeat: no-repeat;
   background-size: auto;
@@ -36,7 +35,22 @@
   bottom: 0;
   right: 0;
   left: 0;
+
 }
+.active .hero {
+  /*background: white!important;*/
+  opacity: 0;
+
+-webkit-transition: 1s!important;
+  transition: 1s!important;
+}
+.active .hero img.profile-img {
+-webkit-animation: bounceOutUp 2s;
+  animation: bounceOutUp 2s;
+
+  opacity: 0;
+}
+
 
 .hero img {
   border-radius: 120px;
@@ -51,6 +65,17 @@
   text-align: center;
 }
 
+
+
+.leaving-fold {
+  background: black;
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  display: block;
+  margin-top: 130px;
+}
 
 
 
