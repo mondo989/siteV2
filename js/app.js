@@ -2,7 +2,7 @@ var app = angular.module('armandosApp', ['ui.bootstrap','ui.router', 'ui']);
 //
 app.config(function($stateProvider, $urlRouterProvider){
   $urlRouterProvider
-    .otherwise("/index");
+    .otherwise("index");
   $stateProvider
     .state("index", {
       url: "/index",

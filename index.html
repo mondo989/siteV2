@@ -2,7 +2,15 @@
 <html ng-app="armandosApp" lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Armandos App</title>
+  <title>Armando.sx</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Armando.sx Web Developer HTML CSS Javasript San Francisco">
+  <meta name="keywords" content="User Interface Designer Web Developer User Interface User Experience HTML CSS Freelance Consultant">
+  <meta name="author" content="Armando.sx Armando Flores">
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+  <link href="url(OstrichSans-Medium.otf)">
+
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -21,15 +29,12 @@
   <script src="//cdn.jsdelivr.net/jquery.waypoints/2.0.2/waypoints.min.js"></script>
   <script src="http://imakewebthings.com/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.js"></script>
 
-  <!-- <script src="js/lib/angular.min.js.map"></script>  I guess this is for debugging-->
   </head>
       <body>
-
-
-
-
           <div class="main-nav">
-            <span style="position: absolute; left:20px; top:20px;"><a  ui-sref="index"><i class="fa fa-home"></i></a></span>
+              <span class="main-logo">
+                <a ui-sref="index">Armando.sx</a>
+              </span>
             <ul>
               <li>
                 <a ui-sref="portfolio">Work</a>
@@ -44,25 +49,14 @@
           </div>
 
           <div class="view-holder">
-            <div ui-view></div>
+              <div ui-view></div>
           </div>
-      </body>
 
+      </body>
       <script src="js/lib/angular-ui-router.min.js"></script>
       <script src="js/lib/angular-bootstrap.min.js"></script>
-
-
-
-
-
-
-
 
       <script src="js/app.js"></script>
       <!-- <script src="js/services.js"></script> -->
       <script src="js/controllers.js"></script>
-
-
-
-
   </html>
