@@ -74,7 +74,6 @@ body {
   margin-top: 10px;
 }
 .active {
-  background: black;
   text-align: center;
   transition: 3s;
 }
