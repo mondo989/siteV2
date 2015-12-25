@@ -1,4 +1,4 @@
-var app = angular.module('armandosApp', ['ui.bootstrap','ui.router', 'zumba.angular-waypoints']);
+var app = angular.module('armandosApp', ['ui.bootstrap','ui.router', 'ui']);
 //
 app.config(function($stateProvider, $urlRouterProvider){
   $urlRouterProvider
