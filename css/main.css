@@ -36,3 +36,10 @@
   margin-top: -80px;
   border: 2px solid white;
 }
+
+
+
+.stuck {
+    top: 0px;
+    position: fixed;
+}

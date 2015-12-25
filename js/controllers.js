@@ -2,13 +2,16 @@
 angular.module('armandosApp')
 
 
-.controller('indexCtrl', ['$scope', function($scope) {
+.controller('indexCtrl', ['$scope', '$state', function($scope, $state) {
 
   $scope.sticky = 'sticky';
+
+    // This is for waypoints !!!
+
+// This fires the portfolio view on a long scroll.
   $scope.test = function(){
-     alert('You have scrolled to an entry.');
- }
+    $state.go("portfolio");
+  }
 
-
-  console.log('indexCtrl loaded')
-}])
+  console.log('indexCtrl loaded');
+}]);
