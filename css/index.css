@@ -37,7 +37,7 @@ body {
 }
 
 .main-nav ul li a:hover{
-  background: blue;
+  background: rgba(0, 0, 0, 0.2);
 }
 .view-holder {
   width: 81%;
@@ -98,6 +98,14 @@ body {
 /* Media Queries */
 /* Media Queries */
 /* Media Queries */
+
+@media (max-width: 991px) {
+  .main-logo a {
+    font-size: 3vw;
+  }
+}
+
+
 
 @media (max-width: 600px) {
   .view-holder {
