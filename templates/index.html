@@ -2,31 +2,42 @@
 
 <div ng-controller="indexCtrl" id="hero">
   <section class="index transition-anim">
-    <span ui-jq="waypoint" ui-options="leavingFold" class="leaving-fold"></span>
-    <div class="hero text-center">
-      <img class="profile-img" src="img/me2.png" alt="">
-      <h1 class="text-center">I'm Armando</h1>
+    <div class="hero text-center" >
+      <img class="profile-img" src="img/me2.png" ui-jq="waypoint" ui-options="leavingFold" alt="">
+
+      <h1 ui-jq="waypoint" ui-options="carouselControls" class="text-center">I'm Armando</h1>
         <div class="separator"></div>
         <!-- <span ui-jq="waypoint" ui-options="portfolio"></span> -->
-      <h3 class="text-center">I'm a Designer &amp; Engineer</h3>
+      <h3 class="text-center">I'm a Designer &amp; Developer</h3>
     </div>
   </section>
 
-  <section class="portfolio-mini">
+  <section id="portfolio" class="portfolio-mini">
     <div class="row">
-      <div id="pfolio" class="portfolio-holder">
-         <h1>Here's some of my Portfolio projects</h1>
+      <div class="portfolio-holder">
+        <h1>Recent Projects</h1>
+        <div class="separator"></div>
+         <div ng-controller="CarouselDemoCtrl" id="slides_control">
+           <div id="carouselHolder">
+             <uib-carousel interval="myInterval"  class="carousel-holder">
+               <uib-slide ng-repeat="slide in slides" active="slide.active" class="slide">
+                 <img ng-src="{{slide.image}}">
+                 <span class="project-content">
+                    <h1>{{slide.title}}</h1>
+                    <p>{{slide.content}}</p>
+                      <a href="#">See more</a>
+                 </span>
+               </uib-slide>
+             </uib-carousel>
+           </div>
+         </div>
+
       </div>
     </div>
   </section>
-
-
-<hr><hr><hr>
-
-  <section class="testimonials">
+  <a class="portfolio-link" ui-sref="portfolio">See More Work <i class="ion-ios-arrow-right"></i></a>
+  <section id="testimonials" class="testimonials">
     <div class="row">
-
-      <hr>
       <p class="reviews-p"> Clients are saying:</p>
         <!-- <div class="reviews-seperator"></div>  -->
         <div class="main">
@@ -70,18 +81,14 @@
       <hr>
     </div>
   </section>
-
-
-
-
-
-
   <!-- <div ui-jq="waypoint" ui-options="portfolio">
      <h1>Portfolio Trigger</h1>
   </div>
   <h2 class="my-sticky-element" ui-jq="waypoint" ui-options="sticky">Sticky Elements</h2> -->
 
 </div>
+
+
 
 
 

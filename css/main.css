@@ -1,16 +1,16 @@
 .index {
-  background-color: blue;
   padding-bottom: 60px!important;
   padding-top: 0;
   margin-top: 0;
   background: #f3f3f3;
   margin-bottom: 40px;
 }
+
 .index h1 {
   font-weight: 200;
   text-transform: uppercase;
-
 }
+
 .index h3 {
   text-transform: uppercase;
   font-weight: 200;
@@ -21,42 +21,33 @@
   width: 90%;
   margin: 0 auto;
   background: #f0f0f0;
-
 }
 
 .hero {
   background: url('../img/sky.png');
   background-repeat: no-repeat;
   background-size: auto;
-  /*position: absolute;*/
   margin-top: 30vh;
-  /*bottom: 0;
-  right: 0;
-  left: 0;*/
-
 
 }
 
 .active .index {
--webkit-transition: 1s;
+  -webkit-transition: 1s;
   transition: 1s;
   padding-bottom: 90px;
-  background: pink!important;
 }
 
 .active .hero {
   /*background: white!important;*/
-
--webkit-transition: 1s!important;
-  transition: 1s!important;
+  /*-webkit-transition: 1s!important;
+  transition: 1s!important;*/
 }
+
 .active .hero img.profile-img {
 /*-webkit-animation: bounceOutUp 2s;
   animation: bounceOutUp 2s;*/
-
   /*opacity: 0;*/
 }
-
 
 .hero img {
   border-radius: 120px;
@@ -66,157 +57,234 @@
 }
 
 
-
-
 .portfolio-mini {
-  background: yellow;
+  margin-top: 50px;
   display: block;
-  padding: 40px;
+  border: 1px solid #f3f3f3;
+  padding-bottom: 520px!important;
+  display: block;
+}
+.portfolio-mini h1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.portfolio-mini .separator {
+  background: black;
+  opacity: .3;
+  border-radius: 50%;
+  height: 1px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#slides_control {
+  display: none;
+}
+
+
+
+
+/*Carousel */
+a.portfolio-link {
+  margin-top: 120px;
+
+  text-align: center;
+  display: block;
+}
+
+a.carousel-control {
+  height: 50px;
+  position: absolute;
+  top: 330px;
+  background: white;
+  padding-top: 10px;
+  border-radius: 50%;
+  width: 50px;
+  opacity: .2;
+  margin-top: 5px;
 
 }
+.left.carousel-control {
+  left:30px;
+}
+.right.carousel-control {
+  right: 30px;
+}
+
+.ion-ios-arrow-left, .ion-ios-arrow-right {
+  color: black;
+}
+
+
 .portfolio-holder h1 {
+  text-align: center;
+  font-size: 27px;
+  text-transform: uppercase;
+  opacity: .5;
+}
+
+.project-content {
   text-align: center;
 }
 
+.project-content h1 {
+  font-size: 2.3vw;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  color: white;
+  opacity: 1;
+}
+.project-content p {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.project-content a {
+  color: blue;
+  opacity: .6;
+}
 
 
-.active section.portfolio-mini  {
-  /*background: blue;*/
-  height: 400px!important;
+.carousel-indicators {
+  bottom: 25px;
+  margin-bottom: -75px;
+}
 
--webkit-transition: 1.2s;
-  transition: 1.2s;
+.carousel-indicators li {
+  border: 1px solid #ccc;
 }
 
 .leaving-fold {
   background: black;
-  position: absolute;
-  top:0;
-  right:0;
-  left:0;
+  height: 3px;
+
+  width: 100px;
   display: block;
-  margin-top: 130px;
 }
-
-
 
 .stuck {
-    top: 0px;
-    position: fixed;
+  top: 0px;
+  position: fixed;
 }
 
+.carousel-caption {
+
+}
+.carousel-holder {
+  position: relative;
+}
+
+.project-content {
+  position: absolute;
+  right: 0;
+  width: 35%;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  height: 240px;
+  top: 0;
+}
+
+.slide {
+  opacity: 0;
+  width: 100%!important;
+  height: 325px;
 
 
+-webkit-transition: 1s;
+  transition: 1s;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.slide img {
+  width: 100%;
+}
 
 .testimonials {
+  background: black;
+  margin-top: 200px;
+}
 
+
+
+
+
+
+#carouselHolder.active .carousel-holder a, #carouselHolder.active ol.carousel-indicators li {
+  opacity: 1!important;
+
+-webkit-animation: fadeInLeft 2s;
+  animation: fadeInLeft 2s;
+
+
+}
+
+
+.carousel-holder a, ol.carousel-indicators li {
+  opacity: 0!important;
 
 }
 
 
 
 
-/*Rotator For Testimonials*/
-.cbp-qtrotator {
-	position: relative;
-	margin: 3em auto 5em auto;
-	max-width: 800px;
-	width: 100%;
-	min-height: 400px;
+/*#portfolio {
+-webkit-transition: 1s!important;
+  transition: 1s!important;
+}*/
+
+#portfolio h1, #portfolio .separator {
+  opacity: 0;
+  font-size: 1px;
+-webkit-transition: 1.5s ease;
+  transition: 1.5s ease;
 }
 
-.cbp-qtrotator .cbp-qtcontent {
-	position: absolute;
-	min-height: 200px;
-	border-top: 1px solid #f4f4f4;
-	border-bottom: 1px solid #f4f4f4;
-	padding: 2em 0;
-	top: 0;
-	z-index: 0;
-	opacity: 0;
-	width: 100%;
+#portfolio .slide img {
+  -webkit-transition: 1s!important;
+  transition: 1s!important;
+  opacity: 0;
 }
 
-.no-js .cbp-qtrotator .cbp-qtcontent {
-	border-bottom: none;
+
+
+
+
+
+#portfolio.active {
+  padding-top: 40px;
+  -webkit-animation: slideInUp 2s!important;
+  animation: slideInUp 2s!important;
 }
 
-/* Currently visible */
-.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
-.no-js .cbp-qtrotator .cbp-qtcontent {
-	position: relative;
-	z-index: 100;
-	pointer-events: auto;
-	opacity: 1;
+#portfolio.active .slide {
+  opacity: 1;
+
+-webkit-animation: slideInDown 1s;
+  animation: slideInDown 1s;
 }
 
-.cbp-qtrotator .cbp-qtcontent:before,
-.cbp-qtrotator .cbp-qtcontent:after {
-	content: " ";
-	display: table;
+#portfolio.active h1, #portfolio.active .separator {
+  opacity: .3;
+  font-size: 30px;
 }
 
-.cbp-qtrotator .cbp-qtcontent:after {
-	clear: both;
+#portfolio.active .separator {
+  background: red;
+  height: 1px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  opacity: .05125;
+  background: black;
 }
 
-.cbp-qtprogress {
-	position: absolute;
-	background: #47a3da;
-	height: 1px;
-	width: 0%;
-	top: 0;
-	z-index: 1000;
+#portfolio.active #slides_control  {
+  display: block;
 }
 
-.cbp-qtrotator blockquote {
-	margin: 0;
-	padding: 0;
-}
 
-.cbp-qtrotator blockquote p {
-	font-size: 2em;
-	color: #888;
-	font-weight: 300;
-	margin: 0.4em 0 1em;
-}
-
-.cbp-qtrotator blockquote footer {
-	font-size: 1.2em;
-}
-
-.cbp-qtrotator blockquote footer:before {
-	content: '? ';
-}
-
-.cbp-qtrotator .cbp-qtcontent img {
-	float: right;
-	margin-left: 3em;
-}
-
-/* Example for media query */
-@media screen and (max-width: 30.6em) {
-
-	.cbp-qtrotator {
-		font-size: 70%;
-	}
-
-	.cbp-qtrotator img {
-		width: 80px;
-	}
-
+#portfolio.active .slide img {
+  opacity: 1;
+  -webkit-animation: fadeInUpBig 1s!important;
+  animation: fadeInUpBig 1s!important;
 }

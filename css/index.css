@@ -4,11 +4,12 @@ body {
 
 
 .main-nav {
-  background: rgba(0, 0, 0, 0.025);
+  background: #fff;
   height: 100%;
   position: fixed;
   left: 0;
   width: 19%;
+  z-index: 9000;
 }
 .main-nav ul {
   display: block;
@@ -73,10 +74,10 @@ body {
   width: 120px;
   margin-top: 10px;
 }
-.active {
+/*.active {
   text-align: center;
   transition: 3s;
-}
+}*/
 
 
 
