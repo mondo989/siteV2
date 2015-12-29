@@ -27,7 +27,7 @@
   background: url('../img/sky.png');
   background-repeat: no-repeat;
   background-size: auto;
-  margin-top: 30vh;
+  margin-top: 31vh;
 
 }
 
@@ -97,14 +97,19 @@ a.carousel-control {
   height: 50px;
   position: absolute;
   top: 330px;
-  background: white;
+  background: white!important;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   padding-top: 10px;
   border-radius: 50%;
   width: 50px;
   opacity: .2;
   margin-top: 5px;
-
 }
+a.carousel-control:hover {
+  border: 1px solid rgba(0, 0, 0, .1);
+  background: #f3f3f3!important;
+}
+
 .left.carousel-control {
   left:30px;
 }
@@ -113,7 +118,7 @@ a.carousel-control {
 }
 
 .ion-ios-arrow-left, .ion-ios-arrow-right {
-  color: black;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -200,8 +205,9 @@ a.carousel-control {
 }
 
 .testimonials {
-  background: black;
+  background: #ccc;
   margin-top: 200px;
+  padding-top: 40px;
 }
 
 

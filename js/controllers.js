@@ -15,19 +15,19 @@ angular.module('armandosApp')
       },
       {
         image: 'http://lorempixel.com/400/500/',
-        title: 'Sameple Image 3',
-        content: 'frfrfrf lorem lorem lroemeosf seifsoef'
+        title: 'TeamWork Online',
+        content: 'TeamWork Online is a global sports network which connects over 3 million sports enthusiasts with executives and professionals at over 800 sports teams and venues.'
       },
       {
         image: 'http://lorempixel.com/400/200/',
         title: 'Sameple Image 15',
         content: 'gtggt lorem lorem lroemeosf seifsoef'
-      },
-      {
-        image: 'http://lorempixel.com/400/200/',
-        title: 'Sameple Image 1',
-        content: 'lorempixel lorem lorem lroemeosf seifsoef'
       }
+      // {
+      //   image: 'http://lorempixel.com/400/200/',
+      //   title: 'Sameple Image 1',
+      //   content: 'lorempixel lorem lorem lroemeosf seifsoef'
+      // }
     ];
   }
 
