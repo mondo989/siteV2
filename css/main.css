@@ -96,7 +96,7 @@ a.portfolio-link {
 a.carousel-control {
   height: 50px;
   position: absolute;
-  top: 330px;
+  top: 433px;
   background: white!important;
   border: 1px solid rgba(0, 0, 0, 0.05);
   padding-top: 10px;
@@ -134,7 +134,7 @@ a.carousel-control:hover {
 }
 
 .project-content h1 {
-  font-size: 2.3vw;
+  font-size: 2.0vw;
   margin-bottom: 30px;
   margin-top: 60px;
   color: white;
@@ -180,23 +180,77 @@ a.carousel-control:hover {
   position: relative;
 }
 
+
+
+.project-content h1, .project-content p, .project-content a {
+  display: inline;
+  font-size: 20px;
+  padding-top: 15px;
+  float: left;
+  width: 31%;
+  margin-top: 0;
+  margin-left: 3px;
+
+}
+#portfolio.active .project-content h1 {
+  color: white!important;
+  opacity: 1;
+  font-weight: 800;
+  width: 40%;
+}
+.project-content p {
+  width: 40%;
+  text-align: left;
+  padding-left: 15px;
+  font-size: 15px;
+  opacity: .7;
+  padding-top: 19px;
+}
+
+.project-content a {
+  width: 15%;
+  font-size: 17px;
+  position: absolute;
+  padding: 0;
+  right: 20px;
+  text-align: right;
+  bottom:0;
+  top:0;
+  padding-right: 20px;
+  padding-top: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.project-content a i {
+  color: white;
+  margin-left: 3px;
+}
+
 .project-content {
   position: absolute;
   right: 0;
-  width: 35%;
-  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
   color: white;
-  height: 240px;
-  top: 0;
+  height: auto;
+
+  bottom:0;
+  left: 0;
+
+-webkit-animation: fadeInUp 3s;
+  animation: fadeInUp 3s;
 }
 
+
 .slide {
-  opacity: 0;
+  opacity: 1;
   width: 100%!important;
-  height: 325px;
+  height: 425px;
+  background: #f3f3f3;
 
 
--webkit-transition: 1s;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -265,8 +319,8 @@ a.carousel-control:hover {
 #portfolio.active .slide {
   opacity: 1;
 
--webkit-animation: slideInDown 1s;
-  animation: slideInDown 1s;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
 #portfolio.active h1, #portfolio.active .separator {
@@ -291,6 +345,6 @@ a.carousel-control:hover {
 
 #portfolio.active .slide img {
   opacity: 1;
-  -webkit-animation: fadeInUpBig 1s!important;
-  animation: fadeInUpBig 1s!important;
+  -webkit-animation: fadeIn 2s!important;
+  animation: fadeIn 2s!important;
 }

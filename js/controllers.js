@@ -10,7 +10,7 @@ angular.module('armandosApp')
     $scope.slides = [
       {
         image: 'http://lorempixel.com/400/100/',
-        title: 'Sameple Image 1',
+        title: 'Entercom',
         content: 'dedede lorem lorem lroemeosf seifsoef'
       },
       {
@@ -20,7 +20,7 @@ angular.module('armandosApp')
       },
       {
         image: 'http://lorempixel.com/400/200/',
-        title: 'Sameple Image 15',
+        title: 'Cryptup.org',
         content: 'gtggt lorem lorem lroemeosf seifsoef'
       }
       // {

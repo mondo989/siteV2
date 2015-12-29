@@ -45,6 +45,7 @@ body {
   position: absolute;
   right: 0;
   transition: 1s;
+  overflow-x: hidden;
 }
 
 .transition-anim {

@@ -4,7 +4,6 @@
   <section class="index transition-anim">
     <div class="hero text-center" >
       <img class="profile-img" src="img/me2.png" ui-jq="waypoint" ui-options="leavingFold" alt="">
-
       <h1 ui-jq="waypoint" ui-options="carouselControls" class="text-center">I'm Armando</h1>
         <div class="separator"></div>
         <!-- <span ui-jq="waypoint" ui-options="portfolio"></span> -->
@@ -21,11 +20,13 @@
            <div id="carouselHolder">
              <uib-carousel interval="myInterval"  class="carousel-holder">
                <uib-slide ng-repeat="slide in slides" active="slide.active" class="slide">
-                 <img ng-src="{{slide.image}}">
+
+                <!--  Custom Div Content will go here -->
+                 <!-- <img ng-src="{{slide.image}}"> -->
                  <span class="project-content">
                     <h1>{{slide.title}}</h1>
                     <p>{{slide.content}}</p>
-                      <a href="#">See more</a>
+                      <a href="#">Learn more <i class="ion-ios-arrow-right"></i></a>
                  </span>
                </uib-slide>
              </uib-carousel>
